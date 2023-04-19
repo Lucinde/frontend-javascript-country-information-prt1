@@ -1,13 +1,8 @@
 import axios from "axios";
 
 const country = document.getElementById('country')
-// const countryName = document.createElement('li');
 let countryData;
 let countryList;
-
-// country.appendChild(countryName);
-// countryName.setAttribute('id', 'flag');
-
 
 async function getCountries() {
     try {
