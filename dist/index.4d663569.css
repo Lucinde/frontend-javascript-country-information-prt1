@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:ital,wght@0,400;1,300&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+header, main {
+  padding: 25px;
+}
+
+h1 {
+  font-family: Aboreto, cursive;
+  font-size: 75px;
+}
+
+h4 {
+  font-family: Aboreto, cursive;
+  font-size: 18px;
+  display: inline;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  max-width: 80%;
+}
+
+ul#country {
+  column-count: 3;
+  break-inside: avoid-column;
+  background-color: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 25px;
+  list-style-type: none;
+  box-shadow: 0 1px 4px #00000029;
+}
+
+#country li {
+  width: 100%;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.blue h4 {
+  color: #5576c2;
+}
+
+.purple h4 {
+  color: #a653ba;
+}
+
+.green h4 {
+  color: #4c824b;
+}
+
+.red h4 {
+  color: #d14e5b;
+}
+
+.yellow h4 {
+  color: #ffd435;
+}
+
+.grey h4 {
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 768px) {
+  ul#country {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ul#country {
+    column-count: 1;
+  }
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */

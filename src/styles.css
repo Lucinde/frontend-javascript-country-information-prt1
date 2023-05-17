@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:ital,wght@0,400;1,300&display=swap');/*font-family: 'Roboto', sans-serif;*/
+
+/********* Main styling *********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+main {
+    padding: 25px;
+}
+
+h1 {
+    font-family: 'Aboreto', cursive;
+    font-size: 75px;
+}
+
+h4 {
+    font-family: 'Aboreto', cursive;
+    display: inline;
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+}
+header img {
+    max-width: 80%;
+}
+
+/********* Country-list *********/
+ul#country {
+    list-style-type: none;
+    /* onderstaande code om de tabel horizontaal in kolommen te zetten */
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    column-count: 3;
+    break-inside: avoid-column;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+}
+
+#country li {
+    /* onderstaande code om de tabel horizontaal in kolommen te zetten */
+    /*flex-basis: 400px;*/
+    /*flex-grow: 1;*/
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%; /*om te voorkomen dat op een breed scherm meerdere landen in 1 kolom komen */
+}
+
+/********* Colors *********/
+.blue h4 {
+    color: #5576C2;
+}
+
+.purple h4 {
+    color: #A653BA;
+}
+
+.green h4{
+    color: #4C824B;
+}
+
+.red h4 {
+    color: #D14E5B;
+}
+
+.yellow h4 {
+    color: #FFD435;
+}
+
+.grey h4{
+    color: darkgrey;
+}
+
+/********* Responsive *********/
+@media screen and (max-width: 768px) {
+    ul#country {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    ul#country {
+        column-count: 1;
+    }
+}
